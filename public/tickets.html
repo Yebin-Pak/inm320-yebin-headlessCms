@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+        <!-- external css -->
+        <link rel="stylesheet" href="./assets/css/tickets.css">
+        <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+
+        <!-- adobe font -->
+        <link rel="stylesheet" href="https://use.typekit.net/vqi4vpb.css">
+
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/d3de9768bc.js" crossorigin="anonymous"></script>
+
+
+        <title>Dashboard Kit/Tickets</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header id="site-header" class="d-flex">
+            <!-- content gets loaded via js -->
+        </header>
+
+        <!-- main -->
+        <main>
+
+            <!-- all tickets -->
+            <section id="all-tickets" class="d-flex flex-column justify-content-center">
+                <div id="tickets-title" class="d-flex justify-content-between align-items-center">
+                    <h5>All tickets</h5>
+
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-arrow-up-wide-short"></i>
+                        <p class="m-0">Sort</p>
+
+                        <button id="filter-btn" type="button" class="btn btn-primary d-flex align-items-center">
+                            <i class="fa-solid fa-filter"></i>
+                            <p class="m-0">Filter</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="tickets-chart-head" class="container-fluid text-left">
+                    <div class="row">
+                        <div class="chart-head col-5 d-flex">Ticket details</div>
+                        <div class="chart-head col-3 d-flex">Customer name</div>
+                        <div class="chart-head col-2 d-flex">Date</div>
+                        <div class="chart-head col-2 d-flex">Priority</div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <table>
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/m 5.png" alt="profile image-Cruise">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>Contact Email not Linked</span>
+                                        <p class="m-0">Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Tom Cruise</span>
+                                    <p class="m-0">on 24.05.2019</p>
+                                </div>
+
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 26, 2019</span>
+                                    <p class="m-0">6:30 PM</p>
+                                </div>
+
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-high"><p>high</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/w 5.png" alt="profile image-Damon">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>Adding Images to Featured Posts</span>
+                                        <p class="m-0">Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Matt Damon</span>
+                                    <p class="m-0">on 24.05.2019</p>
+                                </div>
+
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 26, 2019</span>
+                                    <p class="m-0">8:00 AM</p>
+                                </div>
+
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-low"><p>low</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/w 3.png" alt="profile image-Downey">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>When will I be charged this month?</span>
+                                        <p class="m-0">Updated 1 day ago</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Robert Downey</span>
+                                    <p class="m-0">on 24.05.2019</p>
+                                </div>
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 26, 2019</span>
+                                    <p class="m-0">7:30 PM</p>
+                                </div>
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-high"><p>high</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/m 7.png" alt="profile image-Bale">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>Payment not going through</span>
+                                        <p class="m-0">Updated 2 day ago</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Christian Bale</span>
+                                    <p class="m-0">on 24.05.2019</p>
+                                </div>
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 25, 2019</span>
+                                    <p class="m-0">5:00 PM</p>
+                                </div>
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-normal"><p>normal</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/m 6.png" alt="profile image-Cavil">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>Unable to add replies</span>
+                                        <p class="m-0">Updated 2 day ago</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Henry Cavil</span>
+                                    <p class="m-0">on 24.05.2019</p>
+                                </div>
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 25, 2019</span>
+                                    <p class="m-0">4:00 PM</p>
+                                </div>
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-high"><p>high</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/m 4.png" alt="profile image-Evans">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>Downtime since last week</span>
+                                        <p class="m-0">Updated 3 day ago</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Chris Evans</span>
+                                    <p class="m-0">on 23.05.2019</p>
+                                </div>
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 25, 2019</span>
+                                    <p class="m-0">2:00 PM</p>
+                                </div>
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-normal"><p>normal</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/w 6.png" alt="profile image-Smith">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>Referral Bonus</span>
+                                        <p class="m-0">Updated 4 day ago</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Sam Smith</span>
+                                    <p class="m-0">on 22.05.2019</p>
+                                </div>
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 25, 2019</span>
+                                    <p class="m-0">11:30 AM</p>
+                                </div>
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-low"><p>low</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div class="tickets-list container-fluid text-left">
+                            <div class="row">
+                                <div class="col-5 d-flex align-items-center">
+                                    <picture>
+                                        <img class="profile-picture" src="./assets/images/customers/w 7.png" alt="profile image-Rogers">
+                                    </picture>
+                                    <div class="d-flex flex-column">
+                                        <span>How do I change my password?</span>
+                                        <p class="m-0">Updated 6 day ago</p>
+                                    </div>
+                                </div>
+                        
+                                <div class="col-3 d-flex flex-column justify-content-center">
+                                    <span>Steve Rogers</span>
+                                    <p class="m-0">on 21.05.2019</p>
+                                </div>
+                                <div class="col-2 d-flex flex-column justify-content-center">
+                                    <span>May 24, 2019</span>
+                                    <p class="m-0">1:00 PM</p>
+                                </div>
+                                <div class="col-2 d-flex justify-content-between align-items-center">
+                                    <div class="priority priority-normal"><p>normal</p></div>
+                                    <a href=""><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+
+                    <hr>
+
+                    <tr>
+                        <div id="tickets-chart-page" class="container-fluid d-flex justify-content-end align-items-center">
+                            <nav aria-label="Page navigation" class="d-flex align-items-center">
+                                <span>Rows per page:</span>
+                                <div class="dropdown">
+                                    <button class="btn d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span>8</span>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">4</a></li>
+                                        <li><a class="dropdown-item" href="#">8</a></li>
+                                        <li><a class="dropdown-item" href="#">10</a></li>
+                                        <li><a class="dropdown-item" href="#">15</a></li>
+                                        <li><a class="dropdown-item" href="#">20</a></li>
+                                    </ul>
+                                </div>
+
+                                <ul class="pagination d-flex align-items-center m-0 ps-4">
+                                    <span>1-8 of 1240</span>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-left"></i></a></li>
+                                    <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </tr>
+                </table>
+            </section>
+
+        </main>
+
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+        <!-- header js -->
+        <script src="./assets/js/elements.js"></script>
+
+        <!-- js -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

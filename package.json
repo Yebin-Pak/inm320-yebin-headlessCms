@@ -1,0 +1,20 @@
+{
+  "name": "frontend-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "sass --watch public/assets/css/scss:public/assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
+  },
+  "author": "Yebin Pak",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "lite-server": "^2.6.1",
+    "sass": "^1.89.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "description": ""
+}
