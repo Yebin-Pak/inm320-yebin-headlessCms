@@ -4,10 +4,7 @@ console.log( 'test this' );
 async function getData() {
     try {
         const foobar = await fetch( '/assets/data/content.json' );
-        console.log( foobar );
         const data = await foobar.json();
-        console.log( data );
-        console.log( data.site_name );
 
         // put site name on the web page
         const heading = document.querySelector( '.navbar-brand' );
@@ -17,19 +14,17 @@ async function getData() {
         const side_bar_holder = document.querySelector( 'aside ul' );
 
         // loop through lson array for the side bar
-        data.side_bar.forEach(menu_item => {
+        data.side_bar.forEach((menu_item, index) => {
 
             // create new li
-            const new_list_item = document.createElement("li");
+            const new_list_item = document.createElement( "li" );
             new_list_item.className = "nav_item";
 
             // check if the current URL path matches the menu item's URL
             const currentPath = window.location.pathname;
-
-            // handle edge case where menu_item.url might be relative
             const isActive = currentPath === menu_item.url || currentPath.endsWith(menu_item.url);
             if (isActive) {
-                new_list_item.classList.add("active");
+                new_list_item.classList.add( "active" );
             }
 
             // add the link in the new li
@@ -40,11 +35,14 @@ async function getData() {
                 </a>
             `;
 
-            // add hr
-            
-
             // add the new li to the side bar holder 'nav ul'
             side_bar_holder.appendChild(new_list_item);
+
+            // create hr
+            if (index === 5) {
+                const hr = document.createElement("hr");
+                side_bar_holder.appendChild(hr);
+            }
         });
 
     } catch( error ) {
