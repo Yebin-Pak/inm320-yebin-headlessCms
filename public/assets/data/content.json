@@ -20,7 +20,7 @@
         },
 
         {
-            "url": "",
+            "url": "/ideas.html",
             "text": "Ideas",
             "icon": "fa-lightbulb",
             "link_id": "",
@@ -29,7 +29,7 @@
         },
 
         {
-            "url": "",
+            "url": "/contacts.html",
             "text": "Contacts",
             "icon": "fa-user-group",
             "link_id": "",
@@ -38,7 +38,7 @@
         },
 
         {
-            "url": "",
+            "url": "/agents.html",
             "text": "Agents",
             "icon": "fa-user-tie",
             "link_id": "",
@@ -47,7 +47,7 @@
         },
 
         {
-            "url": "",
+            "url": "/articles.html",
             "text": "Articles",
             "icon": "fa-book",
             "link_id": "",
@@ -56,7 +56,7 @@
         },
 
         {
-            "url": "",
+            "url": "/settings.html",
             "text": "Settings",
             "icon": "fa-gear",
             "link_id": "",
@@ -65,7 +65,7 @@
         },
 
         {
-            "url": "",
+            "url": "/subscription.html",
             "text": "Subscription",
             "icon": "fa-award",
             "link_id": "",
