@@ -1,0 +1,76 @@
+{
+    "site_name": "Overview",
+    "side_bar": [
+        {
+            "url": "/index.html",
+            "text": "Overview",
+            "icon": "fa-chart-pie",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "/tickets.html",
+            "text": "Tickets",
+            "icon": "fa-ticket",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "",
+            "text": "Ideas",
+            "icon": "fa-lightbulb",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "",
+            "text": "Contacts",
+            "icon": "fa-user-group",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "",
+            "text": "Agents",
+            "icon": "fa-user-tie",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "",
+            "text": "Articles",
+            "icon": "fa-book",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "",
+            "text": "Settings",
+            "icon": "fa-gear",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        },
+
+        {
+            "url": "",
+            "text": "Subscription",
+            "icon": "fa-award",
+            "link_id": "",
+            "new_tab": false,
+            "sub_nav": []
+        }
+    ]
+}

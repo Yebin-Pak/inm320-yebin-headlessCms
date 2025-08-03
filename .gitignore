@@ -1,0 +1,7 @@
+# .gitignore 
+# OS generated files #
+######################
+node_modules 
+.vscode
+.vs
+package-lock.json

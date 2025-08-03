@@ -1,59 +1,42 @@
+console.log( 'test this' );
 
-// line chart
+// async/await
+async function getData() {
+    try {
+        const foobar = await fetch( '/assets/data/content.json' );
+        console.log( foobar );
+        const data = await foobar.json();
+        console.log( data );
+        console.log( data.site_name );
 
-window.onload = function () {
-    const ctx = document.getElementById("line-chart").getContext("2d");
+        // put site name on the web page
+        const heading = document.querySelector( '.navbar-brand' );
+        heading.innerHTML = data.site_name;
 
-    // background gradient
-    const gradient = ctx.createLinearGradient(0, 0, 700, 0);
-    gradient.addColorStop(0.0147, "rgba(55, 81, 255, 0.15)");
-    gradient.addColorStop(0.9674, "rgba(55, 81, 255, 0)");
+        //get side bar holder in var
+        const side_bar_holder = document.querySelector( 'aside ul' );
 
-    const xValues = Array.from({ length: 23 }, (_, i) => i);
-    
-    new Chart("line-chart", {
-        type: "line",
-        data: {
-            labels: xValues,
-            datasets: [
-                {
-                    label: "Today",
-                    data: [15, 22, 27, 29, 29, 28.5, 32.5, 44, 50.5, 39, 26, 19, 18, 24, 36, 44, 48, 46.5, 41.5, 38],
-                    borderColor: "#3751FF",
-                    borderWidth: 2,
-                    backgroundColor: gradient, // use the gradient here
-                    fill: true,
-                    tension: 0.4,
+        // loop through lson array for the side bar
+        console.log( data.side_bar );
+        data.side_bar.forEach( menu_item => {
+            console.log( menu_item );
 
-                    pointBackgroundColor: "transparent",
-                    pointBorderColor: "transparent",
-                    pointHoverRadius: 6,
-                    pointHoverBackgroundColor: "white",
-                    pointHoverBorderColor: "#3751FF",
-                    pointHoverBorderWidth: 6
-                },
-                {
-                    label: "Yesterday",
-                    data: [33, 34, 32, 26.5, 23, 23, 26, 31.5, 34, 34, 31, 25, 19, 16.5, 22, 36, 36, 29, 31, 35],
-                    borderColor: "#DFE0EB",
-                    borderWidth: 2,
-                    fill: false,
-                    tension: 0.4,
+            // create new li
+            const new_list_item = document.createElement("li");
 
-                    pointRadius: 0,
-                    pointHoverRadius: 0
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            legend: {
-                display: false
-            }
-        },
-        
-    });
-};
+            // add the link in the new li
+            new_list_item.innerHTML = `<a href="${menu_item.url}" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
+                                            <i class="fa-solid ${menu_item.icon}"></i>
+                                            <span class="m-0">${menu_item.text}</span>
+                                        </a>`
 
+            // add the new li to the main nav holder 'nav ul'
+            side_bar_holder.appendChild( new_list_item );
 
+        });
+
+    } catch( error ) {
+        console.warn( `Oppsie!: ${error}` );
+    }
+}
+getData();

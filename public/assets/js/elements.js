@@ -17,59 +17,7 @@ let headerContent = `
                     </svg>
                     <span>Dashboard Kit</span>
                 </a>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="./index.html" class="nav-link active d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-chart-pie"></i>
-                            <span class="m-0">Overview</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./tickets.html" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-ticket"></i>
-                            <span class="m-0">Tickets</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-lightbulb"></i>
-                            <span class="m-0">Ideas</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-user-group"></i>
-                            <span class="m-0">Contacts</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-user-tie"></i>
-                            <span class="m-0">Agents</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-book"></i>
-                            <span class="m-0">Articles</span>
-                        </a>
-                    </li>
-
-                    <hr>
-
-                    <li class="nav-item">
-                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-gear"></i>
-                            <span class="m-0">Settings</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link d-flex flex-row justify-content-center align-items-center" aria-current="page">
-                            <i class="fa-solid fa-award"></i>
-                            <span class="m-0">Subscription</span>
-                        </a>
-                    </li>
-                </ul>
+                <ul class="nav"></ul>
             </aside>
 
             <!-- nav bar -->
