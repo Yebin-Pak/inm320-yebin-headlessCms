@@ -153,11 +153,6 @@
     "tasks_date": "Today",
     "tasks_content": [
         {
-            "text": "Create new task",
-            "button": "+"
-        },
-
-        {
             "text": "Finish ticket update",
             "button": "urgent"
         },

@@ -115,6 +115,9 @@ async function getData() {
         const tasks_date = document.querySelector( '#tasks-title p' );
         tasks_date.innerHTML = data.tasks_date;
 
+        //get tasks holder in var
+        const tasks_holder = document.getElementById( 'tasks' );
+
         data.tasks_content.forEach((tasks_item, index) => {
 
             // create new div
@@ -123,21 +126,24 @@ async function getData() {
 
             // add the items in the new div
             new_tasks_item.innerHTML = `
-                <p>${tasks_item.text}</p>
-                <span>${tasks_item.number}</span>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="tasks-check">
+                    <label class="form-check-label" for="tasks-check">
+                        ${tasks_item.text}
+                    </label>
+                </div>
+                <button type="button" id="${tasks_item.button}-btn" class="btn btn">${tasks_item.button}</button>
             `;
 
             // add the new div to the tasks holder
             tasks_holder.appendChild(new_tasks_item);
 
             // create hr
-            if (index === 0 || index === 1 || index === 2) {
-                const hr_3 = document.createElement("hr");
-                tasks_holder.appendChild(hr_3);
+            if (index === 0 || index === 1) {
+                const hr_4 = document.createElement("hr");
+                tasks_holder.appendChild(hr_4);
             }
         });
-
-
 
     } catch( error ) {
         console.warn( `Oppsie!: ${error}` );
