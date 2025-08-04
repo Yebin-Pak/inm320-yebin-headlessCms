@@ -72,5 +72,104 @@
             "new_tab": false,
             "sub_nav": []
         }
+    ],
+
+
+    "statistics_content": [
+        {
+            "text": "Unresolved",
+            "number": 60
+        },
+
+        {
+            "text": "Overdue",
+            "number": 16
+        },
+
+        {
+            "text": "Open",
+            "number": 43
+        },
+
+        {
+            "text": "Onhold",
+            "number": 64
+        }
+    ],
+
+    "trend_content": [
+        {
+            "text": "Resolved",
+            "number": 449
+        },
+
+        {
+            "text": "Received",
+            "number": 426
+        },
+
+        {
+            "text": "Average first response time",
+            "number": "33m"
+        },
+
+        {
+            "text": "Average response time",
+            "number": "3h 8m"
+        },
+
+        {
+            "text": "Resolution within SLA",
+            "number": "94%"
+        }
+    ],
+
+
+    "tickets_title": "Unresolved tickets",
+    "tickets_group": "Support",
+    "tickets_content": [
+        {
+            "text": "Waiting on Feature Request",
+            "number": 4238
+        },
+
+        {
+            "text": "Awaiting Customer Response",
+            "number": 1005
+        },
+
+        {
+            "text": "Awaiting Developer Fix",
+            "number": 914
+        },
+
+        {
+            "text": "Pending",
+            "number": 281
+        }
+    ],
+
+    "tasks_title": "Tasks",
+    "tasks_date": "Today",
+    "tasks_content": [
+        {
+            "text": "Create new task",
+            "button": "+"
+        },
+
+        {
+            "text": "Finish ticket update",
+            "button": "urgent"
+        },
+
+        {
+            "text": "Create new ticket example",
+            "button": "new"
+        },
+
+        {
+            "text": "Update ticket report",
+            "button": "default"
+        }
     ]
 }

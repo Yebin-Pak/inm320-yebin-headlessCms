@@ -1,10 +1,11 @@
 console.log( 'test this' );
 
-// async/await
 async function getData() {
     try {
         const foobar = await fetch( '/assets/data/content.json' );
         const data = await foobar.json();
+
+        // side bar
 
         // put site name on the web page
         const heading = document.querySelector( '.navbar-brand' );
@@ -44,6 +45,99 @@ async function getData() {
                 side_bar_holder.appendChild(hr);
             }
         });
+        
+
+
+        // statistics
+
+        //get statistics holder in var
+        const statistics_holder = document.querySelector( '#statistics div' );
+
+        data.statistics_content.forEach(statistics_item => {
+
+            // create new div
+            const new_statistics_item = document.createElement( "div" );
+            new_statistics_item.className = "col";
+
+            // add the items in the new div
+            new_statistics_item.innerHTML = `
+                <h3 class="child">${statistics_item.text}</h3>
+                <p class="child">${statistics_item.number}</p>
+            `;
+
+            // add the new div to the statistics holder
+            statistics_holder.appendChild(new_statistics_item);
+        });        
+
+
+
+        // info cards
+
+        // unresolved tickets
+
+        const tickets_title = document.querySelector( '#tickets-title h5' );
+        tickets_title.innerHTML = data.tickets_title;
+
+        const tickets_group = document.querySelector( '#tickets-title p span' );
+        tickets_group.innerHTML = data.tickets_group;
+
+        //get tickets holder in var
+        const tickets_holder = document.getElementById( 'unresolved-tickets' );
+
+        data.tickets_content.forEach((tickets_item, index) => {
+
+            // create new div
+            const new_tickets_item = document.createElement( "div" );
+            new_tickets_item.className = "tickets-content";
+
+            // add the items in the new div
+            new_tickets_item.innerHTML = `
+                <p>${tickets_item.text}</p>
+                <span>${tickets_item.number}</span>
+            `;
+
+            // add the new div to the tickets holder
+            tickets_holder.appendChild(new_tickets_item);
+
+            // create hr
+            if (index === 0 || index === 1 || index === 2) {
+                const hr_2 = document.createElement("hr");
+                tickets_holder.appendChild(hr_2);
+            }
+        });
+
+
+        // tasks
+
+        const tasks_title = document.querySelector( '#tasks-title h5' );
+        tasks_title.innerHTML = data.tasks_title;
+
+        const tasks_date = document.querySelector( '#tasks-title p' );
+        tasks_date.innerHTML = data.tasks_date;
+
+        data.tasks_content.forEach((tasks_item, index) => {
+
+            // create new div
+            const new_tasks_item = document.createElement( "div" );
+            new_tasks_item.className = "tasks-content";
+
+            // add the items in the new div
+            new_tasks_item.innerHTML = `
+                <p>${tasks_item.text}</p>
+                <span>${tasks_item.number}</span>
+            `;
+
+            // add the new div to the tasks holder
+            tasks_holder.appendChild(new_tasks_item);
+
+            // create hr
+            if (index === 0 || index === 1 || index === 2) {
+                const hr_3 = document.createElement("hr");
+                tasks_holder.appendChild(hr_3);
+            }
+        });
+
+
 
     } catch( error ) {
         console.warn( `Oppsie!: ${error}` );
