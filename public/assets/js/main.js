@@ -140,8 +140,8 @@ async function getData() {
 
             // create hr
             if (index === 0 || index === 1) {
-                const hr_4 = document.createElement("hr");
-                tasks_holder.appendChild(hr_4);
+                const hr_3 = document.createElement("hr");
+                tasks_holder.appendChild(hr_3);
             }
         });
 
