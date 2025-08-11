@@ -465,7 +465,7 @@ fieldset label {
 
 
 /* desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) {
 
     /* main */
     main {
@@ -479,12 +479,16 @@ fieldset label {
         height: 134px;
     }
 
-    #statistics > div > .col-md:hover {
+    #statistics > div > .col {
+        min-width: 10px;
+    }
+
+    #statistics > div > .col:hover {
         border: 1px solid #3751FF;
         cursor: pointer;
     }
 
-    #statistics > div > .col-md:hover .child {
+    #statistics > div > .col:hover .child {
         color: #3751FF;
     }
 
